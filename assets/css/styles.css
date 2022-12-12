@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .app-space {
+    @apply pl-4 pr-5 lg:pl-0 lg:pr-0;
+  }
+
+  .app-container {
+    @apply w-full max-w-980 m-auto;
+  }
+}

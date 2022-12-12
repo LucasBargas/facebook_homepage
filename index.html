@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/fb_icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/app.min.css">
+  <title>Facebook Login - Lucas Bargas</title>
+
+  <!--seo-tags-->
+  <meta name="description" content="Esta aplicação é uma réplica desenvolvida por Lucas Bargas, a fins estudantis, da página inicial do Facebook. Foi utilizado TailwindCSS neste projeto.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Facebook Login - Lucas Bargas">
+  <meta property="og:description" content="Esta aplicação é uma réplica desenvolvida por Lucas Bargas, a fins estudantis, da página inicial do Facebook. Foi utilizado TailwindCSS neste projeto.">
+  <meta property="og:url" content="">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <section class="app-space pt-92 pb-132 min-h-[500px] bg-fb-blue">
+    <div class="app-container">
+      <div class="flex lg:justify-between flex-col lg:flex-row items-center lg:items-start gap-5">
+        <div class="text-center lg:text-left">
+          <figure>
+            <a href="">
+              <img class="inline-block w-40" src="assets/images/fb_logo.png" alt="Facebook Logo">
+            </a>
+          </figure>
+          <h2 class="text-2xl lg:text-28 text-fb-black mt-4">Logins recentes</h2>
+          <p class="text-15 text-fb-gray mb-6">Clique na sua foto ou adicione uma conta.</p>
+
+          <div class="flex gap-4 360:block">
+            <a class="inline-block relative z-10" href="">
+              <figure class="rounded-tl-lg rounded-tr-lg overflow-hidden">
+                <img class="inline-block" src="assets/images/fb_user.jpg" alt="Facebook User">
+              </figure>
+              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-lg text-center bg-white text-fb-black font-medium">
+                Lucas
+              </div>
+              <span class="flex items-center justify-center text-xs rounded-full absolute -top-1 -right-1 z-20 h-6 w-6 bg-fb-red text-white shadow-notification">25</span>
+              <span class="flex items-center justify-center absolute top-1 left-1 h-4 w-4 bg-black-opacity rounded-full">
+                <i class="text-white text-xs fa-solid fa-xmark"></i>
+              </span>
+            </a>
+
+            <a class="inline-block rounded-tl-lg rounded-tr-lg shadow-card h-40 w-40 bg-fb-card 360:mt-3" href="">
+              <figure class="h-full flex items-center justify-center">
+                <span class="flex items-center justify-center rounded-full w-10 h-10 bg-fb-btn-blue">
+                  <i class="inline-block text-2xl fa-solid fa-plus text-white"></i>
+                </span>
+              </figure>
+              <div class="shadow-card rounded-bl-lg rounded-br-lg overflow-hidden p-3 text-lg text-center bg-white text-fb-btn-blue font-medium">
+                Adicionar conta
+              </div>
+            </a>
+          </div>
+        </div>
+        
+        <div class="w-full md:w-[396px] lg:pt-8">
+          <div class="bg-white rounded-lg shadow-form pt-5 pl-5 pr-5 pb-7">
+            <div class="pb-5 border-b border-fb-border">
+              <form class="block">
+                <input class="block w-full outline-none py-[13px] px-4 rounded-md text-lg text-fb-black border-[1px] border-fb-border focus:border-fb-btn-blue focus:shadow-focus" type="text" placeholder="Email ou telefone">
+                <input class="block w-full outline-none mt-3 py-[13px] px-4 rounded-md text-lg text-fb-black border-[1px] border-fb-border focus:border-fb-btn-blue focus:shadow-focus" type="password" placeholder="Senha">
+                <button class="block w-full mt-3 h-12 rounded-md bg-fb-btn-blue text-white text-xl font-bold">
+                  Entrar
+                </button>
+              </form>
+              <div class="text-center pt-3">
+                <a class="text-fb-btn-blue hover:underline" href="">Esqueceu a senha?</a>
+              </div>
+            </div>
+  
+            <div class="text-center pt-6">
+              <a class="inline-block h-12 rounded-md bg-fb-btn-green px-4" href="">
+                <span class="flex items-center h-full text-white text-xl font-bold">Criar nova conta</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="text-center text-fb-black pt-6">
+            <p class="text-sm"><a class="font-bold hover:underline" href="">Criar uma página</a> para uma celebridade, uma marca ou uma empresa.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="app-space py-5">
+    <div class="app-container">
+      <p class="text-center text-sm">Esta aplicação web é uma réplica desenvolvida por <a class="font-medium hover:underline text-fb-btn-blue" target="_blank" href="https://projetoslucasbargas.vercel.app/" rel="noopener noreferrer">Lucas Bargas</a> com base no layout da página inicial do <a class="text-fb-btn-blue font-medium hover:underline" target="_blank" href="https://www.facebook.com/" rel="noopener noreferrer">Facebook</a>. Porém, toda a codificação é própria.</p>
+    </div>
+  </footer>
+
+  <div class="jsModal active px-4 md:px-0 flex justify-center items-center fixed left-0 top-0 z-50 w-full h-screen bg-modal">
+    <div class="modal-area animate-show-modal rounded-xl bg-white p-5 md:max-w-xl">
+      <div class="w-full flex justify-end">
+        <button class="jsCloseButton p-1">
+          <i class="fa-solid fa-xmark text-black text-2xl"></i>
+        </button>
+      </div>
+
+      <div class="modal-area-content text-center">
+        <h2 class="text-xl md:text-2xl font-bold">Lucas Bargas - Facebook Login</h2>
+
+        <p class="mt-4"><strong>Nota:</strong> Esta aplicação web é uma réplica desenvolvida por <a class="font-bold hover:underline text-fb-btn-blue" target="_blank" href="https://projetoslucasbargas.vercel.app/" rel="noopener noreferrer">Lucas Bargas</a> com base no layout da página inicial do <a class="font-bold hover:underline text-fb-btn-blue" target="_blank" href="https://www.facebook.com/" rel="noopener noreferrer">Facebook</a>. Porém, toda a codificação é própria.</p>
+
+        <div class="button-repo pt-2 pb-4">
+          <a class="font-bold hover:underline text-fb-btn-blue" target="_blank" href="https://github.com/LucasBargas/projetos_tailwindcss/tree/main/spotify_homepage">Clique aqui para visualizar o Repositório no GitHub</a>
+        </div>
+
+        <div class="close-button-two">
+          <button class="jsModalButton rounded-xl py-3 px-8 bg-fb-btn-blue text-white">
+            Visualizar projeto
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/modal.js"></script>
+</body>
+</html>
